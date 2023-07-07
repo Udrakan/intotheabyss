@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="IntoTheAbyss" path="Mods/IntoTheAbyss/filelist.xml" corepackage="false" gameversion="0.18.15.14" steamworkshopid="2005463692" installtime="1638909780">  
-  <UIStyle file="LocalMods/IntoTheAbyss/Content/ita_style.xml" />
+  <UIStyle file="LocalMods/IntoTheAbyss/Content/ita_style.xml"/>
+  <Text file="LocalMods/IntoTheAbyss/Content/ita_localisation_English.xml"/>
+  <Item file="LocalMods/IntoTheAbyss/Content/ita_items.xml"/>
 </contentpackage>
