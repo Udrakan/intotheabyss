@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <Override>
+    <TitleText color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="255,255,255,255">
+      <Sprite texture="LocalMods/IntoTheAbyss/ita_titletext.png" sourcerect="0,0,1024,337" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    </TitleText>
+  </Override>
+</style>
