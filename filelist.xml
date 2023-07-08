@@ -3,4 +3,10 @@
   <UIStyle file="LocalMods/IntoTheAbyss/Content/ita_style.xml"/>
   <Text file="LocalMods/IntoTheAbyss/Content/ita_localisation_English.xml"/>
   <Item file="LocalMods/IntoTheAbyss/Content/ita_items.xml"/>
+  <Randomevents file="LocalMods/IntoTheAbyss/Content/ita_events.xml"/>
+  <Afflictions file="LocalMods/IntoTheAbyss/Content/ita_afflictions.xml"/>
+  <NPCSets file="LocalMods/IntoTheAbyss/Content/ita_npcs.xml"/>
+  <locationtypes file="LocalMods/IntoTheAbyss/Content/ita_locationtypes.xml"/>
+  <OutpostConfig file="LocalMods/IntoTheAbyss/Content/ita_outpostconfig.xml"/>
+  <Talents file="LocalMods/IntoTheAbyss/Content/ita_talents.xml"/>
 </contentpackage>

@@ -1,0 +1,14 @@
+<!-- 
+ _npos=".*?"
+ -->
+<Randomevents>
+	<EventPrefabs>
+		<ScriptedEvent identifier="sitdown">
+			<TagAction criteria="itemidentifier:opdeco_officechair" tag="managerchair" submarinetype="Outpost"/>
+			<NPCOperateItemAction npctag="outpostmanager" targettag="managerchair" operate="true"/>
+			<ConversationAction text="Sit, please." speakertag="outpostmanager" waitforinteraction="true" invokertag="speaker" eventsprite="coalition"/>
+			<RemoveItemAction targettag="managerchair"/>
+			<WaitAction time="10"/>
+		</ScriptedEvent>
+	</EventPrefabs>
+</Randomevents>
