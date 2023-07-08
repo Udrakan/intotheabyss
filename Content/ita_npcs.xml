@@ -44,6 +44,55 @@
 				</Item>
 				<Item identifier="ita_npcres"/>
 			</ItemSet>
-			</npc>
-		</npcset>
-	</npcsets>
+		</npc>
+		<npc identifier="ita_medic" job="medicaldoctor" spawnpointtags="medical" healthmultiplier="3" behavior="Active">
+			<ItemSet commonness="1">
+				<Item identifier="doctorsuniform2" equip="true"/>
+				<Item identifier="bodyarmor" equip="true"/>
+				<Item identifier="idcard" equip="true"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antidama1"/>
+				<Item identifier="antidama1"/>
+				<Item identifier="antidama1"/>
+				<Item identifier="antidama1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank"/>
+				</Item>
+				<Item identifier="oxygentank"/>
+				<Item identifier="oxygentank"/>
+				<Item identifier="oxygentank"/>
+			</ItemSet>
+		</npc>
+		<npc identifier="ita_bodyguard" job="securityofficer" tags="securitynpc" spawnpointtags="admin" healthmultiplier="2" behavior="StayInHull">
+			<ItemSet>
+				<Item identifier="securitypatrolclothes" equip="true"/>
+				<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+				<Item identifier="stunbaton">
+					<Item identifier="batterycell"/>
+				</Item>
+				<Item identifier="batterycell" amount="8"/>
+				<Item identifier="handcuffs"/>
+				<Item identifier="shotgun">
+					<Item identifier="shotgunshell" amount="6"/>
+				</Item>
+				<Item identifier="smgmagazine"/>
+				<Item identifier="smgmagazine"/>
+				<Item identifier="divingknife"/>
+				<Item identifier="bodyarmor" equip="true"/>
+				<Item identifier="ballistichelmet3" equip="true"/>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank"/>
+				</Item>
+				<Item identifier="ita_npcres"/>
+			</ItemSet>
+		</npc>
+	</npcset>
+</npcsets>
+	

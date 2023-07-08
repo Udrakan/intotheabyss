@@ -1,5 +1,5 @@
-<!-- 
- _npos=".*?"
+<!--  
+ _npos=".*?" 
  -->
 <Randomevents>
 	<EventPrefabs>
@@ -9,6 +9,24 @@
 			<ConversationAction text="Sit, please." speakertag="outpostmanager" waitforinteraction="true" invokertag="speaker" eventsprite="coalition"/>
 			<RemoveItemAction targettag="managerchair"/>
 			<WaitAction time="10"/>
+		</ScriptedEvent>
+		<ScriptedEvent identifier="ita_outpostsec">
+			<SpawnAction npcsetidentifier="ita_npcs1" npcidentifier="ita_medic" spawnlocation="Outpost"/>
+			<SpawnAction npcsetidentifier="ita_npcs1" npcidentifier="ita_security_coalition" spawnlocation="Outpost"/>
+			<SpawnAction npcsetidentifier="ita_npcs1" npcidentifier="ita_security_coalition" spawnlocation="Outpost"/>
+			<SpawnAction npcsetidentifier="ita_npcs1" npcidentifier="ita_bodyguard" spawnpointtag="admin"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="Airlock"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="EngineeringModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="AdminModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="CrewModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="MedicalModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="ClownModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="HuskModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="ResearchModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="SecurityModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="SecCrewModule"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="ResidentialModuleMain"/>
+			<SpawnAction itemidentifier="ita_extinguisher" offset="500" targetmoduletags="ArmoryModule"/>	
 		</ScriptedEvent>
 	</EventPrefabs>
 </Randomevents>
