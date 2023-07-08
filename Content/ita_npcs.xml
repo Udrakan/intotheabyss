@@ -1,22 +1,49 @@
 <npcsets>
 	<npcset identifier="ita_npcs1">
-			<npc identifier="ita_security_coalition" job="securityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol">
-				<ItemSet>
-					<Item identifier="securitypatrolclothes" equip="true"/>
-					<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-					<Item identifier="stunbaton">
-						<Item identifier="batterycell"/>
-					</Item>
-					<Item identifier="batterycell" amount="8"/>
-					<Item identifier="handcuffs"/>
-					<Item identifier="smg">
-						<Item identifier="smgmagazine"/>
-					</Item>
+		<npc identifier="ita_security_coalition" job="securityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol">
+			<ItemSet>
+				<Item identifier="securitypatrolclothes" equip="true"/>
+				<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+				<Item identifier="stunbaton">
+					<Item identifier="batterycell"/>
+				</Item>
+				<Item identifier="batterycell" amount="8"/>
+				<Item identifier="handcuffs"/>
+				<Item identifier="smg">
 					<Item identifier="smgmagazine"/>
-					<Item identifier="smgmagazine"/>
-					<Item identifier="divingknife"/>
-					<Item identifier="ita_npcres"/>
-				</ItemSet>
+				</Item>
+				<Item identifier="smgmagazine"/>
+				<Item identifier="smgmagazine"/>
+				<Item identifier="divingknife"/>
+				<Item identifier="bodyarmor" equip="true"/>
+				<Item identifier="ballistichelmet1" equip="true"/>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank"/>
+				</Item>
+				<Item identifier="ita_npcres"/>
+			</ItemSet>
+			<ItemSet>
+				<Item identifier="securitypatrolclothes" equip="true"/>
+				<Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+				<Item identifier="stungun">
+					<Item identifier="stungundart"/>
+				</Item>
+				<Item identifier="stunbaton">
+					<Item identifier="batterycell"/>
+				</Item>
+				<Item identifier="batterycell" amount="8"/>
+				<Item identifier="stungundart"/>
+				<Item identifier="stungundart"/>
+				<Item identifier="divingknife"/>
+				<Item identifier="handcuffs"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="bodyarmor" equip="true"/>
+				<Item identifier="ballistichelmet3" equip="true"/>
+				<Item identifier="divingmask">
+					<Item identifier="oxygentank"/>
+				</Item>
+				<Item identifier="ita_npcres"/>
+			</ItemSet>
 			</npc>
-	</npcset>
-</npcsets>
+		</npcset>
+	</npcsets>

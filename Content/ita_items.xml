@@ -15,6 +15,24 @@
 		</Holdable>
 	</Item>
 	<!--Outpost items-->
+	<Item name="Extinguisher Component" identifier="ita_extinguisher" category="Electrical" Tags="smallitem" description="" scale="0.5" hideinmenus="false">
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,256,64,64" origin="0.5,0.5"/>
+		<Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,288,48,48" origin="0.5,0.5"/>
+		<RepairTool extinguishamount="120.0" range="500" barrelpos="0,0" repairthroughholes="true" characterusable="false" requireaimtouse="false" usablein="air" hititems="true" wateramount="100" barrelrotation="270">
+			<ParticleEmitter particle="extinguisher" velocitymin="1000.0" velocitymax="1650.0" particlespersecond="100"/>
+			<sound file="Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true"/>
+			<StatusEffect type="OnNotContained" target="This" setvalue="true" requireaimtouse="false"/>
+		</RepairTool>
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+			<RequiredItem items="screwdriver" type="Equipped"/>
+			<input name="set_state" displayname="connection.setstate">
+				<StatusEffect type="OnUse" target="This" stackable="false" setvalue="true">
+				<UseItem/>
+			</StatusEffect>
+			</input>
+		</ConnectionPanel>
+	</Item>
 	<Item name="" identifier="ita_officechair_01" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.45" category="Decorative" canflipy="false">
 		<sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="570,341,180,267" depth="0.55" premultiplyalpha="false" origin="0.5,0.5"/>
 		<Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
