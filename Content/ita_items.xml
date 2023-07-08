@@ -1,4 +1,20 @@
 <Items>
+	<!--Gameplay setup items-->
+	<Item name="You shouldnt see this" identifier="ita_npcres" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" noninteractable="true">
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,770,64,64"/>
+		<Sprite texture="Content/Items/Materials/minerals.png" sourcerect="133,221,35,32" depth="0.55" origin="0.5,0.5"/>
+		<Body width="5" radius="15" density="9"/>
+		<Holdable slots="Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" msg="ItemMsgPickUpSelect">
+			<StatusEffect type="Always" target="This" delay="5">
+				<Remove/>
+			</StatusEffect>
+			<StatusEffect type="Always" target="This, Character" range="500" interval="1" disabledeltatime="true">
+				<Conditional targetcontainer="true"/>
+				<Affliction identifier="ita_npcstunres" strength="5"/>
+			</StatusEffect>
+		</Holdable>
+	</Item>
+	<!--Outpost items-->
 	<Item name="" identifier="ita_officechair_01" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.45" category="Decorative" canflipy="false">
 		<sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="570,341,180,267" depth="0.55" premultiplyalpha="false" origin="0.5,0.5"/>
 		<Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" issecondaryitem="true" drawuserbehind="true">
@@ -23,5 +39,4 @@
 			<limbposition limb="LeftHand" position="140,-105" allowusinglimb="true"/>
 		</Controller>
 	</Item>
-	
 </Items>
